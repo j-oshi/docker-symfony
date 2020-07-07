@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AfroFoodMat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="African Restaurant Finder" />
+    <meta name="keywords" content="African Restaurant, African Food, African Cuisine, African Store" />
+    <meta name="author" content="AfroFoodMat" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
+   
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="{{ asset('css/icomoon.css') }}" />
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="{{ asset('css/simple-line-icons.css') }}" />
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
+    <!-- Bootstrap  -->
+
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/ytv.css') }}" />
+  
+    <link rel="stylesheet" href="{{ asset('css/custombox.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/mainModal.css') }}" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/FrontPageStyle.css') }}" />
+    <!-- Modernizr JS -->
+    <script src="{{ asset('js/modernizr-2.6.2.min.js') }}" /></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="fh5co-container">
+        <div id="fh5co-home" class="js-fullheight" data-section="home">
+            <div class="flexslider">
+
+                <div class="fh5co-overlay"></div>
+                <div class="fh5co-text">
+                    <div class="container">
+                        <div class="row">
+                            <img src="{{ asset('images/afrofoodmatlogo.png') }}" width="225" Height="163" alt="Bootstrap Touch Slider" class="slide-image" />
+                            <h1 class="to-animate">AfroFoodMat</h1>
+                            <h2 class="to-animate">Find <span><a>African Restaurants </a></span>close to you.</h2>
+                            <!--<form id="addressForm" class="form-horizontal" action="Home/Locate" method="POST">-->
+                            <form id="addressForm" class="form-horizontal">
+                                <p class="inp-wrap rest-wrap">
+                                    <label for="categories" class="grid-25 searchlabel">Find</label>
+                                    <select name="african_cuisine" id="african_cuisine" class="grid-75">
+                                        <option value="All" selected="selected">All African Cuisines</option>
+                                        <option value="Algeria"> Algeria</option>
+                                        <option value="Angola"> Angola</option>
+                                        <option value="Benin3 "> Benin</option>
+                                        <option value="Botswana"> Botswana</option>
+                                        <option value="Burkina Faso"> Burkina Faso</option>
+                                        <option value="Burundi"> Burundi</option>
+                                        <option value="Cabo Verde"> Cabo Verde</option>
+                                        <option value="Cameroon"> Cameroon</option>
+                                        <option value="Central African Republic">Central African Republic</option>
+                                        <option value="Chad"> Chad</option>
+                                        <option value="Comoros"> Comoros</option>
+                                        <option value="Congo-(Republic)"> Congo-(Republic)</option>
+                                        <option value="Congo-(Democratic)"> Congo-(Democratic)</option>
+                                        <option value="Cote d'Ivoire"> Cote d'Ivoire</option>
+                                        <option value="Djibouti"> Djibouti</option>
+                                        <option value="Egypt"> Egypt</option>
+                                        <option value="Equatorial Guinea"> Equatorial Guinea</option>
+                                        <option value="Eritrea"> Eritrea</option>
+                                        <option value="Ethiopia"> Ethiopia</option>
+                                        <option value="Gabon"> Gabon</option>
+                                        <option value="Gambia"> Gambia</option>
+                                        <option value="Ghana"> Ghana</option>
+                                        <option value="Guinea">Guinea</option>
+                                        <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                        <option value="Kenya">Kenya</option>
+                                        <option value="Lesotho">Lesotho</option>
+                                        <option value="Liberia">Liberia</option>
+                                        <option value="Libya">Libya</option>
+                                        <option value="Madagascar">Madagascar</option>
+                                        <option value="Malawi">Malawi</option>
+                                        <option value="Mali">Mali</option>
+                                        <option value="Mauritania">Mauritania</option>
+                                        <option value="Mauritius">Mauritius</option>
+                                        <option value="Morocco">Morocco</option>
+                                        <option value="Mozambique">Mozambique</option>
+                                        <option value="Namibia">Namibia</option>
+                                        <option value="Niger">Niger</option>
+                                        <option value="Nigeria">Nigeria</option>
+                                        <option value="Rwanda">Rwanda</option>
+                                        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                        <option value="Senegal">Senegal</option>
+                                        <option value="Seychelles">Seychelles</option>
+                                        <option value="Sierra Leone">Sierra Leone</option>
+                                        <option value="Somalia">Somalia</option>
+                                        <option value="South Africa">South Africa</option>
+                                        <option value="South Sudan">South Sudan</option>
+                                        <option value="Sudan">Sudan</option>
+                                        <option value="Swaziland">Swaziland</option>
+                                        <option value="Tanzania">Tanzania</option>
+                                        <option value="Togo">Togo</option>
+                                        <option value="Tunisia">Tunisia</option>
+                                        <option value="Uganda">Uganda</option>
+                                        <option value="Zambia">Zambia</option>
+                                        <option value="Zimbabwe">Zimbabwe</option>
+                                    </select>
+                                </p>
+                                <p class="inp-wrap dist-wrap">
+                                    <label for="categories" class="grid-45 searchlabel">within</label>
+                                    <select name="proximity_distance" id="proximity_distance" class="grid-55">
+                                        <option value="1" selected="">1 Mile</option>
+                                        <option value="5">5 Miles</option>
+                                        <option value="10">10 Miles</option>
+                                        <option value="20">20 Miles</option>
+                                        <option value="25">25 Miles</option>
+                                        <option value="50">50 Miles</option>
+                                        <option value="100">100 Miles</option>
+                                    </select>
+                                </p>
+                                <p class="inp-wrap post-wrap">
+                                    <label for="search-field" class="search-label searchlabel grid-25">of</label>
+                                    <input class="grid-75 geocomplete" id="search-address" placeholder="e.g. place, postcode" value="" autocomplete="off" type="text">
+                                </p>
+                                <p class="inp-wrap submit-wrap">
+                                    <button id="FrontPageSearch" type="button" class="grid-100 submit-search" data-demo='{"content":{"effect":"slidetogether"}}'>Locate</button>
+                                </p>
+
+                                <div id="addressDetails" class="hide">
+                                    <input name="lat" id="lat" class="form-control" value="" type="hidden">
+                                    <input name="lng" id="lng" class="form-control" value="" type="hidden">
+                                </div>
+
+                                <h4 class="search-option-label">Or</h4>
+
+                                <p class="search-wrap">
+                                    <button id="presearch" type="button" data-demo='{"content":{"effect":"slidetogether"}}'>Previous search</button>
+                                    <button id="GetCurrentLocation" type="button" class="device-location" data-demo='{"content":{"effect":"slidetogether"}}'>Use Current Location</button>
+                                </p>
+
+                                <div class="hide">
+                                    <input name="current-lat" id="current-lat" class="form-control" value="" type="hidden">
+                                    <input name="current-lng" id="current-lng" class="form-control" value="" type="hidden">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <ul class="slides">
+                    <li style="background-image: url({{ asset('images/slide_1.jpg') }});" data-stellar-background-ratio="0.5"></li>
+                    <li style="background-image: url({{ asset('images/afmn.png') }});" data-stellar-background-ratio="0.5"></li>
+                    <li style="background-image: url({{ asset('images/afmn_1.jpg') }});" data-stellar-background-ratio="0.5"></li>
+                    <li style="background-image: url({{ asset('images/afmn_2.jpg') }});" data-stellar-background-ratio="0.5"></li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="fh5co-menus" data-section="menu">
+            <div class="container">
+                <div class="row text-center fh5co-heading row-padded">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="heading to-animate">Let us bring a taste of Africa to You!</h2>
+                        <p class="sub-heading to-animate"><img alt="" src="asset('images/african_cooking.jpg') }}"></p>
+                        <p class="sub-heading to-animate">Africa Food Matter is a web-based company serving Africa communities in the UK. We offer information on Africans restaurants and food stores. Let AfroFoodMat help get you business noticed by people looking to eat African Food. If you are an African food retailer or restaurant owner. Please register your business information and submit your listing here!.</p>
+                    </div>
+                </div>
+                <div class="row row-padded">
+                    <div id="responsive" class="ytv-canvas"></div>
+                </div>
+            </div>
+        </div>
+                
+	<div id="gtco-subscribe">
+		<div class="gtco-container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2 class="cursive-font">Subscribe</h2>
+                                        <p>Subscribe to our weekly Newsletter and stay tuned.</p>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group">
+								<label for="email" class="sr-only">Email</label>
+								<input id="subscriber-name" class="form-control" placeholder="Name" type="text">
+							</div>
+						</div>
+                                            	<div class="col-md-4 col-sm-4">
+							<div class="form-group">
+								<label for="email" class="sr-only">Email</label>
+								<input id="subscriber-email" class="form-control" placeholder="Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<button id="SubscribeToNewselleter"  class="btn btn-default btn-block">Subscribe</button>
+						</div>
+                                                <div class="center-parent">
+                                                    <div class="center-container">
+                                                        <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+                                                        <span class="sr-only">Loading...</span>
+                                                    </div>
+                                                </div>
+					
+				</div>
+			</div>
+		</div>
+	</div>                
+
+        <div id="fh5co-footer">
+            <div class="container">
+                <div class="row row-padded">
+                    <div class="col-md-12 text-center">
+
+                        <div class="container">
+                            <ul class="page-footer--link-list">
+                                <li><a href="{{ path('homepage')}}">Home</a></li>
+                                <li><a href="{{ path('joinpage')}}">Join AFM</a></li>
+                                <li><a href="{{ path('joinpage')}}">Business Login</a></li>
+                                <li><a href="{{ path('contactpage')}}">Contact</a></li>
+                                <li><a href="/privacy">Privacy</a></li>
+                            </ul>
+                        </div>
+                        <p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul class="fh5co-social">
+                            <li class="to-animate-2"><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
+                            <li class="to-animate-2"><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
+                            <li class="to-animate-2"><a href="#" target="_blank"><i class="icon-instagram"></i></a></li>
+                        </ul>
+                        <p class="to-animate">&copy; <script>document.write(new Date().getFullYear());</script> AfroFoodMat. <br> Designed by <a href="http://oshinit.com" target="_blank">Oshinit</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modals -->
+    <div id="demo-modal" class="demo-modal">
+        <a href="javascript:void(0);" onclick="Custombox.modal.close();" class="demo-close"><i class="fa fa-times"></i></a>
+        <button type="button" class="btn btn-outline btn-info demo-close-btn" onclick="Custombox.modal.close();">Close</button>
+
+        <div class="card form-card">
+            <div id="search-result-title"></div>
+            <div id="search-result">
+                <div class="center-search">
+                    <div class="center-container">
+                        <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            <div id="search-result-footer">
+                <button id="btnLoadMore" type="button" class="btn btn-default btn-lg btn-block">Show More</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    {#<script src="~/afm/js/jquery.min.js"></script>#}
+    
+    <script src="{{ asset('js/custombox.legacy.min.js') }}" /></script>
+    <script src="{{ asset('js/custombox.min.js') }}" /></script>
+
+    <script src="{{ asset('js/mainModal.js') }}" /></script>
+
+    <!-- jQuery Easing -->
+    <script src="{{ asset('js/jquery.easing.1.3.js') }}" /></script>
+    <!-- Bootstrap -->
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="{{ asset('js/jquery.waypoints.min.js') }}" /></script>
+    <!-- Stellar Parallax -->
+    <script src="{{ asset('js/jquery.stellar.min.js') }}" /></script>
+
+    <script src="{{ asset('js/ytv.js') }}" /></script>
+    <script src="{{ asset('js/ytvcontrol.js') }}" /></script>
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAv_L4utOkpFLav6mE4N3qH0zkVBdXz_rY&amp;libraries=places"></script>
+    {#<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>#}
+    <script src="{{ asset('js/jquery.geocomplete.min.js') }}" /></script>
+    <!-- Flexslider -->
+    <script src="{{ asset('js/jquery.flexslider-min.js') }}" /></script>
+    <!-- Main JS -->
+    <script src="{{ asset('js/main.js') }}" /></script>
+    <script src="{{ asset('js/bootstrap-notify.min.js') }}" /></script>
+    <script src="{{ asset('js/jquery.nicescroll.min.js') }}" /></script>
+    <script src="{{ asset('js/Subscribe.js') }}" /></script>
+    <script src="{{ asset('js/FrontPageRestaurantSearch.js') }}" /></script>
+</body>
+</html>

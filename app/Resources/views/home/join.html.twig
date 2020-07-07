@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AfroFoodMat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="African Restaurant Finder" />
+    <meta name="keywords" content="African Restaurant, African Food, African Cuisine, African Store" />
+    <meta name="author" content="AfroFoodMat" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="{{ asset('css/simple-line-icons.css') }}">
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="{{ asset('css/simple-line-icons.css') }}">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Modernizr JS -->
+    <script src="{{ asset('js/modernizr-2.6.2.min.js') }}"></script>
+
+    <link href="{{ asset('css/FrontPageStyle.css') }}" rel="stylesheet" />
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="fh5co-container">
+        <div class="js-sticky">
+            <div class="fh5co-main-nav">
+                <div class="container-fluid">
+{#                    <div class="fh5co-menu-1">
+                        <a href="#" data-nav-section="home">Home</a>
+                        <a href="#" data-nav-section="about">About</a>
+                        <a href="#" data-nav-section="features">Features</a>
+                    </div>#}
+                    <div class="fh5co-logo">
+						<a href="{{ path('homepage')}}">AfroFoodMat</a>
+                    </div>
+{#                  <div class="fh5co-menu-2">
+                        <a href="#" data-nav-section="menu">Menu</a>
+                        <a href="#" data-nav-section="events">Events</a>
+                        <a href="#" data-nav-section="reservation">Reservation</a>
+                    </div>#}
+                </div>
+
+            </div>
+        </div>
+        <div id="fh5co-sayings">
+            <div class="container">
+                <div class="row to-animate">
+                    <div class="flexslider">
+                        <ul class="slides">
+
+                            <li>
+                                <blockquote>
+                                    <p>&ldquo;Cooking is an art, but all art requires knowing something about the techniques and materials&rdquo;</p>
+                                    <p class="quote-author">&mdash; Nathan Myhrvold</p>
+                                </blockquote>
+                            </li>
+                            <li>
+                                <blockquote>
+                                    <p>&ldquo;Give a man food, and he can eat for a day. Give a man a job, and he can only eat for 30 minutes on break.&rdquo;</p>
+                                    <p class="quote-author">&mdash; Lev L. Spiro</p>
+                                </blockquote>
+                            </li>
+                            <li>
+                                <blockquote>
+                                    <p>&ldquo;Find something you’re passionate about and keep tremendously interested in it.&rdquo;</p>
+                                    <p class="quote-author">&mdash; Julia Child</p>
+                                </blockquote>
+                            </li>
+                            <li>
+                                <blockquote>
+                                    <p>&ldquo;Never work before breakfast; if you have to work before breakfast, eat your breakfast first.&rdquo;</p>
+                                    <p class="quote-author">&mdash; Josh Billings</p>
+                                </blockquote>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fh5co-events" data-section="events" style="background-image: url(images/slide_2.jpg);" data-stellar-background-ratio="0.5">
+            <div class="fh5co-overlay"></div>
+            <div class="container">
+                <div class="row text-center fh5co-heading row-padded">
+                    <div class="col-md-6 col-md-offset-3 to-animate">
+                        <h2 class="heading">Join AfroFoodMat</h2>
+                        <p class="sub-heading">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="row fh5co-event to-animate-2">
+                            <h3>Business Membership Form</h3>
+                            <span id="currentday" class="fh5co-event-meta"></span>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            
+                                <div id="legend"><h4>Restaurant Information</h4></div>
+                                <div class="form-group">
+                                    <input type="text" id="restaurantname" name="restaurantname" placeholder="Restaurant Name" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="restaurantaddress" name="restaurantaddress" placeholder="Restaurant Address" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="restaurantpostcode" name="restaurantpostcode" placeholder="Restaurant Postcode" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                        <div class="join-cuisine">
+                                            <select name="african_cuisine" id="african_cuisine" class="form-control">
+                                                <option value="" selected="selected">Select African Cuisine</option>
+                                                <option value="Algeria"> Algeria</option>
+                                                <option value="Angola"> Angola</option>
+                                                <option value="Benin3 "> Benin</option>
+                                                <option value="Botswana"> Botswana</option>
+                                                <option value="Burkina Faso"> Burkina Faso</option>
+                                                <option value="Burundi"> Burundi</option>
+                                                <option value="Cabo Verde"> Cabo Verde</option>
+                                                <option value="Cameroon"> Cameroon</option>
+                                                <option value="Central African Republic">Central African Republic</option>
+                                                <option value="Chad"> Chad</option>
+                                                <option value="Comoros"> Comoros</option>
+                                                <option value="Congo-(Republic)"> Congo-(Republic)</option>
+                                                <option value="Congo-(Democratic)"> Congo-(Democratic)</option>
+                                                <option value="Cote d'Ivoire"> Cote d'Ivoire</option>
+                                                <option value="Djibouti"> Djibouti</option>
+                                                <option value="Egypt"> Egypt</option>
+                                                <option value="Equatorial Guinea"> Equatorial Guinea</option>
+                                                <option value="Eritrea"> Eritrea</option>
+                                                <option value="Ethiopia"> Ethiopia</option>
+                                                <option value="Gabon"> Gabon</option>
+                                                <option value="Gambia"> Gambia</option>
+                                                <option value="Ghana"> Ghana</option>
+                                                <option value="Guinea">Guinea</option>
+                                                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                                <option value="Kenya">Kenya</option>
+                                                <option value="Lesotho">Lesotho</option>
+                                                <option value="Liberia">Liberia</option>
+                                                <option value="Libya">Libya</option>
+                                                <option value="Madagascar">Madagascar</option>
+                                                <option value="Malawi">Malawi</option>
+                                                <option value="Mali">Mali</option>
+                                                <option value="Mauritania">Mauritania</option>
+                                                <option value="Mauritius">Mauritius</option>
+                                                <option value="Morocco">Morocco</option>
+                                                <option value="Mozambique">Mozambique</option>
+                                                <option value="Namibia">Namibia</option>
+                                                <option value="Niger">Niger</option>
+                                                <option value="Nigeria">Nigeria</option>
+                                                <option value="Rwanda">Rwanda</option>
+                                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                                <option value="Senegal">Senegal</option>
+                                                <option value="Seychelles">Seychelles</option>
+                                                <option value="Sierra Leone">Sierra Leone</option>
+                                                <option value="Somalia">Somalia</option>
+                                                <option value="South Africa">South Africa</option>
+                                                <option value="South Sudan">South Sudan</option>
+                                                <option value="Sudan">Sudan</option>
+                                                <option value="Swaziland">Swaziland</option>
+                                                <option value="Tanzania">Tanzania</option>
+                                                <option value="Togo">Togo</option>
+                                                <option value="Tunisia">Tunisia</option>
+                                                <option value="Uganda">Uganda</option>
+                                                <option value="Zambia">Zambia</option>
+                                                <option value="Zimbabwe">Zimbabwe</option>
+                                            </select>
+                                        </div>
+                                </div>
+                                <div id="legend"><h4>Contact Information</h4></div>
+                                <div class="form-group">
+                                    <input type="text" id="contactname" name="contactname" placeholder="Your name" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="contactemail" name="contactemail" placeholder="Your email" class="form-control">
+                                    <span id="contactemailValidate" class="text-danger">This email has already been used to submit an application.</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="contacttelephone" name="contacttelephone" placeholder="Telephone" class="form-control">
+                                </div>
+                                <div class="form-group">                                    
+                                    <textarea class="form-control" id="contactmessage" rows="3" placeholder="Tell us about your project"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button id="submitJoin"  class="btn btn-primary">Send Message</button>
+                                </div>
+                            
+                        </div>
+                        <div class="center-joinform">
+                            <div class="center-container">
+                                <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fh5co-contact" data-section="reservation">
+            <div class="container">
+                <div class="row text-center fh5co-heading row-padded">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h2 class="heading to-animate">Reserve a Table</h2>
+                        <p class="sub-heading to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 to-animate-2">
+                        <h3>Contact Info</h3>
+                        <ul class="fh5co-contact-info">
+                            <li class="fh5co-contact-address ">
+                                <i class="icon-home"></i>
+                                5555 Love Paradise 56 New Clity 5655, <br>Excel Tower United Kingdom
+                            </li>
+                            <li><i class="icon-phone"></i> (123) 465-6789</li>
+                            <li><i class="icon-envelope"></i>info@freehtml5.co</li>
+                            <li><i class="icon-globe"></i> <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 to-animate-2">
+                        <div class="fh5co-event to-animate-2">
+
+                            <h3>Reservation Form</h3>
+                            <div class="form-group ">
+                                <label for="name" class="sr-only">Name</label>
+                                <input id="name" class="form-control" placeholder="Name" type="text">
+                            </div>
+                            <div class="form-group ">
+                                <label for="email" class="sr-only">Email</label>
+                                <input id="email" class="form-control" placeholder="Email" type="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="occation" class="sr-only">Occation</label>
+                                <select class="form-control" id="occation">
+                                    <option>Select an Occation</option>
+                                    <option>Wedding Ceremony</option>
+                                    <option>Birthday</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+                            <div class="form-group ">
+                                <label for="date" class="sr-only">Date</label>
+                                <input id="date" class="form-control" placeholder="Date &amp; Time" type="text">
+                            </div>
+
+
+                            <div class="form-group ">
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <button class="btn btn-primary">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="fh5co-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <div class="container">
+                        <ul class="page-footer--link-list">
+                                <li><a href="{{ path('homepage')}}">Home</a></li>
+                                <li><a href="{{ path('joinpage')}}">Join AFM</a></li>
+                                <li><a href="{{ path('joinpage')}}">Business Login</a></li>
+                                <li><a href="{{ path('contactpage')}}">Contact Us</a></li>
+                                <li><a href="/privacy">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="fh5co-social">
+                        <li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>
+                    </ul>
+                    <p class="to-animate">&copy; <!--<script>document.write(new Date().getFullYear());</script>--> <br> Designed by <a href="http://oshinit.com" target="_blank">Oshinit</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <!-- jQuery Easing -->
+    <script src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
+    <!-- Bootstrap -->
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
+    <!-- Stellar Parallax -->
+    <script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
+
+    <!-- Flexslider -->
+    <script src="{{ asset('js/jquery.flexslider-min.js') }}"></script>
+    <!-- Main JS -->
+    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/joinScript.js') }}"></script>
+    <script>
+        document.getElementById("currentday").innerHTML = formatAMPM();
+
+        function formatAMPM() {
+        var d = new Date(),
+            minutes = d.getMinutes().toString().length === 1 ? '0'+d.getMinutes() : d.getMinutes(),
+            hours = d.getHours().toString().length === 1 ? '0'+d.getHours() : d.getHours(),
+            ampm = d.getHours() >= 12 ? 'pm' : 'am',
+            months = ['January','Febuary','March','April','May','June','July','August','September','October','November','December'],
+            days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+        return d.getDate()+' '+months[d.getMonth()] +' '+d.getFullYear();
+        }
+    </script>
+</body>
+</html>

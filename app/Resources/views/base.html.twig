@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AfroFoodMat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="African Restaurant Finder" />
+    <meta name="keywords" content="African Restaurant, African Food, African Cuisine, African Store" />
+    <meta name="author" content="AfroFoodMat" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="{{ asset('css/simple-line-icons.css') }}">
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="{{ asset('css/simple-line-icons.css') }}">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Modernizr JS -->
+    <script src="{{ asset('js/modernizr-2.6.2.min.js') }}"></script>
+
+    <link href="{{ asset('css/FrontPageStyle.css') }}" rel="stylesheet" />
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="fh5co-container">
+        <div class="js-sticky">
+            <div class="fh5co-main-nav">
+                <div class="container-fluid">
+{#                    <div class="fh5co-menu-1">
+                        <a href="#" data-nav-section="home">Home</a>
+                        <a href="#" data-nav-section="about">About</a>
+                        <a href="#" data-nav-section="features">Features</a>
+                    </div>#}
+                    <div class="fh5co-logo">
+						<a href="{{ path('homepage')}}">AfroFoodMat</a>
+                    </div>
+{#                  <div class="fh5co-menu-2">
+                        <a href="#" data-nav-section="menu">Menu</a>
+                        <a href="#" data-nav-section="events">Events</a>
+                        <a href="#" data-nav-section="reservation">Reservation</a>
+                    </div>#}
+                </div>
+
+            </div>
+        </div>
+        <div id="fh5co-sayings">
+            <div class="container">
+                <div class="row text-center fh5co-heading row-padded">
+                    {% block body %}{% endblock %}
+                    {% block javascripts %}{% endblock %}           
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fh5co-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <div class="container">
+                        <ul class="page-footer--link-list">
+                                <li><a href="{{ path('homepage')}}">Home</a></li>
+                                <li><a href="{{ path('joinpage')}}">Join AFM</a></li>
+                                <li><a href="{{ path('joinpage')}}">Business Login</a></li>
+                                <li><a href="{{ path('contactpage')}}">Contact Us</a></li>
+                                <li><a href="/privacy">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="fh5co-social">
+                        <li class="to-animate-2"><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li class="to-animate-2"><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li class="to-animate-2"><a href="#"><i class="icon-instagram"></i></a></li>
+                    </ul>
+                    <p class="to-animate">&copy; <!--<script>document.write(new Date().getFullYear());</script>--> <br> Designed by <a href="http://oshinit.com" target="_blank">Oshinit</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <!-- jQuery Easing -->
+    <script src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
+    <!-- Bootstrap -->
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
+    <!-- Stellar Parallax -->
+    <script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
+
+    <!-- Flexslider -->
+    <script src="{{ asset('js/jquery.flexslider-min.js') }}"></script>
+    <!-- Main JS -->
+    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/joinScript.js') }}"></script>
+    <script>
+        document.getElementById("currentday").innerHTML = formatAMPM();
+
+        function formatAMPM() {
+        var d = new Date(),
+            minutes = d.getMinutes().toString().length === 1 ? '0'+d.getMinutes() : d.getMinutes(),
+            hours = d.getHours().toString().length === 1 ? '0'+d.getHours() : d.getHours(),
+            ampm = d.getHours() >= 12 ? 'pm' : 'am',
+            months = ['January','Febuary','March','April','May','June','July','August','September','October','November','December'],
+            days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+        return d.getDate()+' '+months[d.getMonth()] +' '+d.getFullYear();
+        }
+    </script>
+</body>
+</html>
+
+
+{#<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+
+    </body>
+</html>#}
